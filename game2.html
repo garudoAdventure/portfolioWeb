@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/game.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="index.html">ポートフォリオ</a>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-2">
+          <div class="list-group" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-intro" role="tab" aria-controls="list-intro">ゲーム紹介</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-1" role="tab" aria-controls="list-intro-1">体感操作</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-2" role="tab" aria-controls="list-intro-2">プレイヤーステート</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-3" role="tab" aria-controls="list-intro-3">ボス</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-4" role="tab" aria-controls="list-intro-4">マップチップ</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-5" role="tab" aria-controls="list-intro-5">イラスト</a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content" id="nav-tabContent">
+            <!--ゲーム紹介-->
+            <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
+              <div class="container">
+                <div class="row">
+                  <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/title2.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game2/zan.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game2/aim.png" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <dl>
+                    <dt>作品内容</dt>
+                    <dd>体感操作✖ランニングゲーム。狙った敵の弱点に合わせて、一撃必殺の斬撃放つ！</dd>
+                    <dt>作品説明</dt>
+                    <dd>
+                      本作はNintendo Switch向けに開発したゲームです。体感操作を中心に楽しめるように、キャラクターがステージ内を自動で走る仕様にしました。その結果、ランニングゲームの形になりました。
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!--体感操作-->
+            <div class="tab-pane fade" id="list-intro-1" role="tabpanel" aria-labelledby="list-intro-1-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col mx-auto">
+                    <img src="./assets/game2/joycon.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    Switch内部の姿勢値を使うことで、Joy-Conの傾きを簡単に取得できます。加速度センサーから計算する方法もありますが、重力やJoy-Conの回転を考慮する必要があるため、姿勢値を使った方が正確で簡単です。
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--プレイヤーステート-->
+            <div class="tab-pane fade" id="list-intro-2" role="tabpanel" aria-labelledby="list-intro-2-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-3 mx-auto" style="display: flex; align-items: center;">
+                    <img src="./assets/game2/playerStateCpp.png" class="img-fluid">
+                  </div>
+                  <div class="col-9 mx-auto">
+                    <img src="./assets/game2/playerState.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    プレイヤーには複数の状態がありますが、ステートパターンを用いることで、各状態の管理や遷移を容易に行えるようになります。
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--ボス-->
+            <div class="tab-pane fade" id="list-intro-3" role="tabpanel" aria-labelledby="list-intro-3-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col mx-auto">
+                    <img src="./assets/game2/boss.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    第三ステージのボス戦は、ボスが五つの角を使ってプレイヤーに攻撃する。五つの角を全部破壊しない限り、ボスのコアに攻撃できない。<br>
+                    ボスの攻撃パターンを四つ用意しました。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col mx-auto">
+                    <img src="./assets/game2/bossAttack.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-6 mx-auto">
+                    <img src="./assets/game2/bossAimCode.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    プレイヤーに向けて、角を一つ一つ発射するエイム攻撃。<br>
+                    三角関数のarctanを使って、角をプレイヤー向けの方向に回転した後、その方向のままで発射する。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col mx-auto">
+                    <img src="./assets/game2/bossDash.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-8 mx-auto">
+                    <img src="./assets/game2/bossDashCode.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    ボスは角ごとに、プレイヤーにぶつかる。<br>
+                    ボスのY方向速度をX座標によって変化する。これで二次曲線のような動きが表現できます。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col mx-auto">
+                    <img src="./assets/game2/bossCircleAttack.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-8 mx-auto">
+                    <img src="./assets/game2/bossCircleCode.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    ボスは画面中心から、角を時計回りで段々拡大回転し、プレイヤーに攻撃する。<br>
+                    各ボス角の速度（接線方向）を三角関数を用いて設定して、回りながら外に拡大することが実現できます。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col mx-auto">
+                    <img src="./assets/game2/bossCrossAttack.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    ボスの角はプレイヤーを包囲して、一気にプレイヤーに向けて発射する攻撃。<br>
+                    まずは角を指定位置に移動して、そこからエイム攻撃と同じプレイヤーの方向に向けて発射する。
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--マップチップ-->
+            <div class="tab-pane fade" id="list-intro-4" role="tabpanel" aria-labelledby="list-intro-4-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col" style="display: flex; align-items: center;">
+                    <img src="./assets/game2/gameMap.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-8">
+                    <img src="./assets/game2/converter.png" class="img-fluid">
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/game2/mapchip.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    Excelで複数のフィールドパターンを作成し、外部コンバーターで配列に変換してプログラムに直接保存します。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/game2/addField.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    ゲームフィールドは同時に3つまでしか存在しません。<br>
+                    新しいフィールドに入った際は、前のフィールドを削除し、新しいフィールドを配列の末尾に追加します。<br>
+                    これにより、ゲーム全体の処理負荷を抑えることができます。
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--イラスト-->
+            <div class="tab-pane fade" id="list-intro-5" role="tabpanel" aria-labelledby="list-intro-5-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/game2/csp.png" class="img-fluid">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/game2/cspDraw.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    Clip Studio Paintを使用して、キャラクターや一部のイラストを制作しました。
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark">
+      <div class='container mt-5'>
+        <div class='row'>
+          <div class='mx-auto text-white text-center'>
+            <p>Copyright © sample All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+
+    </script>
+  </body>
+</html>

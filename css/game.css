@@ -1,0 +1,16 @@
+.description {
+  background-color: #faebd78c;
+  padding: 10px;
+}
+
+.description > h4 {
+  margin-bottom: 0px;
+}
+
+#list-intro-1 > .container > .row > .col-5 {
+  display: flex;
+  align-items: center;
+}
+body > div.container:first-of-type {
+  min-height: 80vh;
+}

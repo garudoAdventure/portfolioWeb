@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/game.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="index.html">ポートフォリオ</a>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-2">
+          <div class="list-group" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-intro" role="tab" aria-controls="list-intro">ゲーム紹介</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-1" role="tab" aria-controls="list-intro-1">マイク入力</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-2" role="tab" aria-controls="list-intro-2">3D表現</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-3" role="tab" aria-controls="list-intro-3">ダブルバッファ</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-4" role="tab" aria-controls="list-intro-4">ドット絵</a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content" id="nav-tabContent">
+            <!--ゲーム紹介-->
+            <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
+              <div class="container">
+                <div class="row">
+                  <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/title3.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game3/boat.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game3/campass.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game3/gun.png" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <dl>
+                    <dt>作品内容</dt>
+                    <dd>本作は息で船を動かす体感型ゲームです。道を塞ぐ氷山を大砲で破壊しながら、1日が終わるまでに多くのコインを集めます。</dd>
+                    <dt>作品説明</dt>
+                    <dd>
+                      1年生最初の制作展のテーマは「ほっと」でした。色々考えた結果、マイクを使って息を「ほっと」する体験をコンセプトにしました。息を吹くと船が進み、一瞬で強く吹くと大砲が撃てるなど、新しい体験をプレイヤーに届けたいと思いました
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!--マイク入力-->
+            <div class="tab-pane fade" id="list-intro-1" role="tabpanel" aria-labelledby="list-intro-1-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8 mx-auto">
+                    <img src="./assets/game3/mic.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    Win32 APIの関数を使って、マイクから検知した音量を取得します。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-8 mx-auto">
+                    <img src="./assets/game3/gunMic.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    毎フレームの音量値と前フレームの音量値の差から、プレイヤーの現在の行動を推測できます。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="rol">
+                  <h4>参考資料</h4>
+                  <a href="https://learn.microsoft.com/ja-jp/windows/win32/api/_coreaudio/">https://learn.microsoft.com/ja-jp/windows/win32/api/_coreaudio/</a>
+                </div>
+              </div>
+            </div>
+            <!--3D表現-->
+            <div class="tab-pane fade" id="list-intro-2" role="tabpanel" aria-labelledby="list-intro-1-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8 mx-auto">
+                    <img src="./assets/game3/3D.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    このゲームは、船を第三者視点で操作する疑似3D表現のゲームです。<br>
+                    3D表現を実現するため、投影変換や視点変換など複数の変換処理を用いました。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-5 mx-auto">
+                    <img src="./assets/game3/2dMap.png" class="img-fluid">
+                  </div>
+                  <div class="col-5 mx-auto">
+                    <img src="./assets/game3/3dMap.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    まずはコインと氷山を2D平面上でランダムで配置します。<br>
+                    そこからコインと氷山の座標を3D座標に変換します。これでワールド座標ができました。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-5 mx-auto">
+                    <img src="./assets/game3/viewMap.png" class="img-fluid">
+                  </div>
+                  <div class="col-7 mx-auto" style="display: flex; align-items: center;">
+                    <img src="./assets/game3/viewRotate.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    次は船を原点として、オブジェクト座標を再定義する。<br>
+                    船は回転できる故に、オブジェクト座標を回転行列に掛け算する必要がある。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-8 mx-auto">
+                    <img src="./assets/game3/projectArray.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    最後に座標に透視投影行列を適用します。このとき得られる座標のZ値が深度を表し、その値が 0〜1の範囲にある場合のみ描画されます。<br>
+                    また、このZ値をもとに 深度テストが行われるため、コインと氷山の前後関係を正しく描画できます。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="rol">
+                  <h4>参考資料</h4>
+                  <a href="https://hackmd.io/@23657689/projection_matrix">https://hackmd.io/@23657689/projection_matrix</a><br>
+                  <a href="https://openhome.cc/Gossip/WebGL/PerspectiveProjection.html">https://openhome.cc/Gossip/WebGL/PerspectiveProjection.html</a>
+                </div>
+              </div>
+            </div>
+            <!--ダブルバッファ-->
+            <div class="tab-pane fade" id="list-intro-3" role="tabpanel" aria-labelledby="list-intro-2-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8">
+                    <img src="./assets/game3/doubleBuffer.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    コンソールはDirectXとは異なり、ダブルバッファの仕様を持ってないため、描画負荷を下げるために自分でダブルバッファを作成しました。
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--ドット絵-->
+            <div class="tab-pane fade" id="list-intro-4" role="tabpanel" aria-labelledby="list-intro-3-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8">
+                    <img src="./assets/game3/aseprite.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    Asepriteでドット絵を制作し、ゲーム内で再現しました<br>
+                    コンソールの解像度が80*25に制限されているため、ビジュアル表現にはドット絵を採用するのが適切だと考えました。
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark">
+      <div class='container mt-5'>
+        <div class='row'>
+          <div class='mx-auto text-white text-center'>
+            <p>Copyright © sample All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+
+    </script>
+  </body>
+</html>
