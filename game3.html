@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>LIN HOUTING's ポートフォリオ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/game.css">
@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid justify-content-center">
-        <a class="navbar-brand" href="index.html">ポートフォリオ</a>
+        <a class="navbar-brand" href="index.html">LIN HOUTING's ポートフォリオ</a>
       </div>
     </nav>
     <div class="container mt-5">
@@ -31,10 +31,21 @@
             <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
               <div class="container">
                 <div class="row">
-                  <div id="carouselExample" class="carousel slide">
+                  <div id="carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="./assets/title3.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <iframe width="1052" height="645" src="https://www.youtube.com/embed/sfUT4O21iNc?si=K6ilfT3QmvWdCTw5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="carousel-item">
                         <img src="./assets/game3/boat.png" class="d-block w-100">
@@ -45,26 +56,31 @@
                       <div class="carousel-item">
                         <img src="./assets/game3/gun.png" class="d-block w-100">
                       </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game3/demo.png" class="d-block w-100">
+                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
                 </div>
-                <div class="row">
-                  <dl>
-                    <dt>作品内容</dt>
-                    <dd>本作は息で船を動かす体感型ゲームです。道を塞ぐ氷山を大砲で破壊しながら、1日が終わるまでに多くのコインを集めます。</dd>
-                    <dt>作品説明</dt>
-                    <dd>
-                      1年生最初の制作展のテーマは「ほっと」でした。色々考えた結果、マイクを使って息を「ほっと」する体験をコンセプトにしました。息を吹くと船が進み、一瞬で強く吹くと大砲が撃てるなど、新しい体験をプレイヤーに届けたいと思いました
-                    </dd>
-                  </dl>
+                <div class="row mt-2 catch-copy">
+                  <h3>
+                    キミの息で船を動かす！<br>
+                    道を塞ぐ氷山を大砲で壊しながら、1日の終わりまでにできるだけ多くのコインを集めましょう！
+                  </h3>
+                </div>
+                <div class="row mt-3">
+                  <h4>作品説明</h4>
+                  <h5 class="description">
+                    1年生最初の制作展のテーマは「ほっと」でした。色々考えた結果、マイクを使って息を「ほっと」する体験をコンセプトにしました。<br>
+                    息を吹くと船が進み、一瞬で強く吹くと大砲が撃てるなど、新しい体験をプレイヤーに届けたいと思いました。</h5>
                 </div>
               </div>
             </div>
@@ -127,8 +143,8 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    まずはコインと氷山を2D平面上でランダムで配置します。<br>
-                    そこからコインと氷山の座標を3D座標に変換します。これでワールド座標ができました。
+                    まず、コインと氷山を 2D 平面上にランダム配置します。<br>
+                    その後、各オブジェクトの座標を 3D 座標へ変換し、ワールド座標として扱えるようにしました。
                   </h4>
                 </div>
               </div>
@@ -143,8 +159,8 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    次は船を原点として、オブジェクト座標を再定義する。<br>
-                    船は回転できる故に、オブジェクト座標を回転行列に掛け算する必要がある。
+                    次に、船を原点としたローカル座標系に変換し、各オブジェクトの座標を再定義します。<br>
+                    船は回転するため、オブジェクト座標に回転行列を掛け、船の向きに合わせて座標を変換します。
                   </h4>
                 </div>
               </div>
@@ -156,8 +172,9 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    最後に座標に透視投影行列を適用します。このとき得られる座標のZ値が深度を表し、その値が 0〜1の範囲にある場合のみ描画されます。<br>
-                    また、このZ値をもとに 深度テストが行われるため、コインと氷山の前後関係を正しく描画できます。
+                    最後に、座標に透視投影行列を適用します。<br>
+                    このとき得られる座標のZ値が深度を表し、値が0〜1の範囲にある場合のみ描画対象となります。<br>
+                    また、このZ値をもとに深度テストが行われるため、コインと氷山の前後関係を正しく判定して描画できます。
                   </h4>
                 </div>
               </div>
@@ -188,13 +205,13 @@
             <div class="tab-pane fade" id="list-intro-4" role="tabpanel" aria-labelledby="list-intro-3-list">
               <div class="container">
                 <div class="row">
-                  <div class="col-8">
+                  <div class="col">
                     <img src="./assets/game3/aseprite.png" class="img-fluid">
                   </div>
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    Asepriteでドット絵を制作し、ゲーム内で再現しました<br>
+                    Asepriteでドット絵を制作し、ゲーム内で再現しました。<br>
                     コンソールの解像度が80*25に制限されているため、ビジュアル表現にはドット絵を採用するのが適切だと考えました。
                   </h4>
                 </div>

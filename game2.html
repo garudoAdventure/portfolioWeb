@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>LIN HOUTING's ポートフォリオ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/game.css">
@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid justify-content-center">
-        <a class="navbar-brand" href="index.html">ポートフォリオ</a>
+        <a class="navbar-brand" href="index.html">LIN HOUTING's ポートフォリオ</a>
       </div>
     </nav>
     <div class="container mt-5">
@@ -32,10 +32,21 @@
             <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
               <div class="container">
                 <div class="row">
-                  <div id="carouselExample" class="carousel slide">
+                  <div id="carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="./assets/title2.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <iframe width="1052" height="574" src="https://www.youtube.com/embed/uunistgkJVo?si=8enRaiecGB_jriPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="carousel-item">
                         <img src="./assets/game2/zan.png" class="d-block w-100">
@@ -43,26 +54,33 @@
                       <div class="carousel-item">
                         <img src="./assets/game2/aim.png" class="d-block w-100">
                       </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game2/demo.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game2/demo2.png" class="d-block w-100">
+                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
                 </div>
-                <div class="row">
-                  <dl>
-                    <dt>作品内容</dt>
-                    <dd>体感操作✖ランニングゲーム。狙った敵の弱点に合わせて、一撃必殺の斬撃放つ！</dd>
-                    <dt>作品説明</dt>
-                    <dd>
-                      本作はNintendo Switch向けに開発したゲームです。体感操作を中心に楽しめるように、キャラクターがステージ内を自動で走る仕様にしました。その結果、ランニングゲームの形になりました。
-                    </dd>
-                  </dl>
+                <div class="row mt-2 catch-copy">
+                  <h3>
+                    体感操作✖ランニングゲーム<br>
+                    狙った敵の弱点に合わせて、一撃必殺の斬撃放つ！
+                  </h3>
+                </div>
+                <div class="row mt-3">
+                  <h4>作品説明</h4>
+                  <h5 class="description">
+                    本作はNintendo Switch向けに開発したゲームです。体感操作を中心に楽しめるように、キャラクターがステージ内を自動で走る仕様にしました。その結果、ランニングゲームの形になりました。</h5>
                 </div>
               </div>
             </div>
@@ -109,8 +127,9 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    第三ステージのボス戦は、ボスが五つの角を使ってプレイヤーに攻撃する。五つの角を全部破壊しない限り、ボスのコアに攻撃できない。<br>
-                    ボスの攻撃パターンを四つ用意しました。
+                    第三ステージのボス戦では、ボスは五つの角を使ってプレイヤーに攻撃してきます。<br>
+                    五つの角をすべて破壊するまでは、ボスのコアにダメージを与えることはできません。<br>
+                    また、ボスの攻撃パターンは四種類用意しています。
                   </h4>
                 </div>
               </div>
@@ -127,8 +146,8 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    プレイヤーに向けて、角を一つ一つ発射するエイム攻撃。<br>
-                    三角関数のarctanを使って、角をプレイヤー向けの方向に回転した後、その方向のままで発射する。
+                    一つ目は、プレイヤーを狙って角を一つずつ射出するエイム攻撃です。<br>
+                    三角関数のarctanを使用してプレイヤーへの方向角を算出し、その角度に角を回転させた後、同じ方向へ飛ばします。
                   </h4>
                 </div>
               </div>
@@ -145,8 +164,8 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    ボスは角ごとに、プレイヤーにぶつかる。<br>
-                    ボスのY方向速度をX座標によって変化する。これで二次曲線のような動きが表現できます。
+                    二つ目は、ボス自身が角ごとにプレイヤーへ突進する攻撃です。<br>
+                    このとき、X座標に応じてボスのY方向速度を変化させることで、二次曲線のような軌道で移動する動きを表現しています。
                   </h4>
                 </div>
               </div>
@@ -163,8 +182,8 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    ボスは画面中心から、角を時計回りで段々拡大回転し、プレイヤーに攻撃する。<br>
-                    各ボス角の速度（接線方向）を三角関数を用いて設定して、回りながら外に拡大することが実現できます。
+                    三つ目は、ボスが画面中央から角を時計回りに回転させながら、徐々に外側へ拡大する攻撃です。<br>
+                    各角の前進速度（接線方向）を三角関数で設定し、回りながら外へ広がる動きを実現しました。
                   </h4>
                 </div>
               </div>
@@ -176,8 +195,8 @@
                 </div>
                 <div class="row mt-2 description">
                   <h4>
-                    ボスの角はプレイヤーを包囲して、一気にプレイヤーに向けて発射する攻撃。<br>
-                    まずは角を指定位置に移動して、そこからエイム攻撃と同じプレイヤーの方向に向けて発射する。
+                    四つ目は、ボスの角がプレイヤーを包囲して、一斉にプレイヤーへ向けて発射する攻撃です。<br>
+                    まず各角を指定した位置まで移動する。そのあと、プレイヤーの位置を参照して向きを調整し、一斉に発射します。
                   </h4>
                 </div>
               </div>
@@ -226,6 +245,8 @@
                   <div class="col">
                     <img src="./assets/game2/csp.png" class="img-fluid">
                   </div>
+                </div>
+                <div class="row mt-1">
                   <div class="col">
                     <img src="./assets/game2/cspDraw.png" class="img-fluid">
                   </div>
