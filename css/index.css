@@ -56,11 +56,22 @@ ul.timeline .gameIntro > .gameImg {
 .gameImg > img {
   max-width: 350px;
 }
-dt {
+ul.timeline dt {
   font-size: 15px;
 }
-dd {
+ul.timeline dd {
   font-size: 18px;
   font-weight: bold;
   margin-left: 10px;
+}
+
+.gameIntro {
+  position: relative;
+}
+
+.gameIntro > .award {
+  position: absolute;
+  top: -30px;
+  right: -50px;
+  max-width: 120px;
 }

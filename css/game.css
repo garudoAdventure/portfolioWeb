@@ -14,3 +14,12 @@
 body > div.container:first-of-type {
   min-height: 80vh;
 }
+
+.catch-copy {
+  background-color: #faebd78c;
+  padding: 10px;
+}
+
+.catch-copy > h3 {
+  margin-bottom: 0px;
+}
