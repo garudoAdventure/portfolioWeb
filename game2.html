@@ -20,6 +20,7 @@
           <div class="list-group" role="tablist">
             <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-intro" role="tab" aria-controls="list-intro">ゲーム紹介</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-1" role="tab" aria-controls="list-intro-1">体感操作</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-6" role="tab" aria-controls="list-intro-6">見破りシステム</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-2" role="tab" aria-controls="list-intro-2">プレイヤーステート</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-3" role="tab" aria-controls="list-intro-3">ボス</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-4" role="tab" aria-controls="list-intro-4">マップチップ</a>
@@ -100,6 +101,54 @@
                 <div class="row mt-2 description">
                   <h4>
                     Switch内部の姿勢値を使うことで、Joy-Conの傾きを簡単に取得できます。加速度センサーから計算する方法もありますが、重力やJoy-Conの回転を考慮する必要があるため、姿勢値を使った方が正確で簡単です。
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--見破りシステム-->
+            <div class="tab-pane fade" id="list-intro-6" role="tabpanel" aria-labelledby="list-intro-6-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="./assets/game2/playerAim.png" class="img-fluid">
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/game2/playerDash.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    本作の目玉システム「見破り」は、敵の弱点を見通し、その方向に合わせて正しい斬撃を行うことで、敵の目の前まで一気にダッシュし、一撃必殺で倒します。<br>
+                    さらに、一撃必殺後に続けて正しい斬撃を行うことで、連続コンボにつなげることができます。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/game2/addEnemy.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    プレイヤーが「見破り」状態に入ると、プレイヤーを中心として敵との距離順に敵を配列へ記録します。<br>
+                    その後、探知範囲から外れた敵は配列から削除します。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="./assets/game2/drawRoute.png" class="img-fluid">
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/game2/playerDashCode.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-2 description">
+                  <h4>
+                    この距離順に並べた敵の配列をもとに、一撃必殺コンボの判定や敵順の可視化を行いました。<br>
+                    また、arctanを用いてターゲットされた敵の位置から前進角度を算出し、ルートを示す破線の描画や、プレイヤーのダッシュ方向の取得ができました。
                   </h4>
                 </div>
               </div>
