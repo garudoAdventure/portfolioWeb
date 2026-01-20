@@ -21,12 +21,13 @@
             <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-intro" role="tab" aria-controls="list-intro">ゲーム紹介</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-1" role="tab" aria-controls="list-intro-1">2Dと3Dの切り替え</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-2" role="tab" aria-controls="list-intro-2">レイヤーの切り替え</a>
-            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-3" role="tab" aria-controls="list-intro-3">ステージエディター</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-4" role="tab" aria-controls="list-intro-4">Blender & Assimp</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-5" role="tab" aria-controls="list-intro-5">ブルーム</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-10" role="tab" aria-controls="list-intro-10">渦巻き背景</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-7" role="tab" aria-controls="list-intro-7">パーティクル</a>
-            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-8" role="tab" aria-controls="list-intro-8">Direct Write</a>
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-9" role="tab" aria-controls="list-intro-9">シーン遷移</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-8" role="tab" aria-controls="list-intro-8">Direct Write</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-intro-3" role="tab" aria-controls="list-intro-3">ステージエディター</a>
           </div>
         </div>
         <div class="col-10">
@@ -41,6 +42,9 @@
                         <img src="./assets/title.png" class="d-block w-100">
                       </div>
                       <div class="carousel-item">
+                        <iframe width="1052" height="574" src="https://www.youtube.com/embed/rnWMWABdMNM" title="次元迷宮" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      </div>
+                      <div class="carousel-item">
                         <img src="./assets/game1/2D.png" class="d-block w-100">
                       </div>
                       <div class="carousel-item">
@@ -48,6 +52,12 @@
                       </div>
                       <div class="carousel-item">
                         <img src="./assets/game1/layer.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game1/dialog2.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/game1/password.png" class="d-block w-100">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -80,13 +90,10 @@
             <div class="tab-pane fade" id="list-intro-1" role="tabpanel" aria-labelledby="list-intro-1-list">
               <div class="container">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-6">
                     <img src="./assets/game1/2D.png" class="img-fluid">
                   </div>
-                  <div class="col-2 mx-auto" style="display: flex; align-items: center; justify-content: center;">
-                    <img src="./assets/game1/exchange.png" class="img-fluid" style="width: 100px;">
-                  </div>
-                  <div class="col-5">
+                  <div class="col-6">
                     <img src="./assets/game1/3D.png" class="img-fluid">
                   </div>
                 </div>
@@ -161,7 +168,7 @@
                   </h4>
                 </div>
               </div>
-              <div class="container mt-2">
+              <div class="container mt-5">
                 <div class="row">
                   <div class="col-8">
                     <img src="./assets/game1/renderTexture.png" class="img-fluid">
@@ -309,7 +316,7 @@
                   <h4>このゲームは派手なエフェクトや綺麗な背景表現が少ない分、ビジュアルを向上させるための工夫として、イルミネーションを取り入れることを考えました。</h4>
                 </div>
               </div>
-              <div class="container mt-2">
+              <div class="container mt-5">
                 <div class="row">
                   <div class="col">
                     <img src="./assets/game1/blur.png" class="img-fluid">
@@ -328,35 +335,87 @@
                 </div>
               </div>
             </div>
+            <!--渦巻背景-->
+            <div class="tab-pane fade" id="list-intro-10" role="tabpanel" aria-labelledby="list-intro-10-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8 mx-auto">
+                    <img src="./assets/game1/spiral.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row description mt-2">
+                  <h4>このゲームは派手なエフェクトや綺麗な背景表現が少ない分、ビジュアルを向上させるための工夫として、イルミネーションを取り入れることを考えました。</h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row" style="display: flex; align-items: center;">
+                  <div class="col-6">
+                    <img src="./assets/game1/perlineNoize.png" class="img-fluid">
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/game1/perlineNoizeCode.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row description mt-2">
+                  <h4>まずはパーリンノイズを用いて、ランダムな縦線を生成します。</h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="./assets/game1/spiral2.png" class="img-fluid">
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/game1/sprialCode.png" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row description mt-2">
+                  <h4>
+                    さらに、渦巻き効果を適用します。<br>
+                    まずはUV座標の中心を(0.5,0.5)から(0,0)に移動します。<br>
+                    次に、中心からの距離をもとに回転角度を算出します(アルキメデスの螺旋)。<br>
+                    最後に、UV座標を回転変換し、最初に中心を移動するため引いた0.5を足し戻すれば完成です。<br>
+                    そして、背景が視認性を損なわないようにパラメータを調整し、シンプルな渦巻き背景を作成しました。
+                  </h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="rol">
+                  <h4>参考資料</h4>
+                  <a href="https://postd.cc/understanding-perlin-noise/" target="_blank">https://postd.cc/understanding-perlin-noise/</a><br>
+                  <a href="https://zenn.dev/baroqueengine/books/a19140f2d9fc1a/viewer/95c334" target="_blank">https://zenn.dev/baroqueengine/books/a19140f2d9fc1a/viewer/95c334</a><br>
+                  <a href="http://marupeke296.com/ALG_No3_PerlinNoize.html" target="_blank">http://marupeke296.com/ALG_No3_PerlinNoize.html</a><br>
+                  <a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%82%AD%E3%83%A1%E3%83%87%E3%82%B9%E3%81%AE%E8%9E%BA%E6%97%8B" target="_blank">https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%82%AD%E3%83%A1%E3%83%87%E3%82%B9%E3%81%AE%E8%9E%BA%E6%97%8B</a><br>
+                </div>
+              </div>
+            </div>
             <!--パーティクル-->
             <div class="tab-pane fade" id="list-intro-7" role="tabpanel" aria-labelledby="list-intro-7-list">
               <div class="container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-8 mx-auto">
-                      <img src="assets/game1/paricle.png" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="row description mt-2">
-                    <h4>パーティクルはエフェクトを作る際に欠かせない技術であるため、このゲームにはぜひ実装したいと考えました。</h4>
+                <div class="row">
+                  <div class="col mx-auto">
+                    <img src="assets/game1/paricle.png" class="img-fluid">
                   </div>
                 </div>
-                <div class="container mt-2">
-                  <div class="row">
-                    <div class="col-8 mx-auto">
-                      <img src="assets/game1/particleCode.png" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="row description mt-2">
-                    <h4>パーティクル生成時にランダムな速度を設定しています。ライフタイムがゼロになると、自動的に消去される。</h4>
+                <div class="row description mt-2">
+                  <h4>パーティクルはエフェクトを作る際に欠かせない技術であるため、このゲームにはぜひ実装したいと考えました。</h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-8">
+                    <img src="assets/game1/particleCode.png" class="img-fluid">
                   </div>
                 </div>
-                <div class="container mt-5">
-                  <div class="rol">
-                    <h4>参考資料</h4>
-                    <a href="https://enginetrouble.net/2014/05/gamedev-weekly-2014-0528.html" target="_blank">https://enginetrouble.net/2014/05/gamedev-weekly-2014-0528.html</a><br>
-                    <a href="https://yttm-work.jp/gmpg/gmpg_0011.html" target="_blank">https://yttm-work.jp/gmpg/gmpg_0011.html</a>
-                  </div>
+                <div class="row description mt-2">
+                  <h4>パーティクル生成時にランダムな速度を設定しています。ライフタイムがゼロになると、自動的に消去される。</h4>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="rol">
+                  <h4>参考資料</h4>
+                  <a href="https://enginetrouble.net/2014/05/gamedev-weekly-2014-0528.html" target="_blank">https://enginetrouble.net/2014/05/gamedev-weekly-2014-0528.html</a><br>
+                  <a href="https://yttm-work.jp/gmpg/gmpg_0011.html" target="_blank">https://yttm-work.jp/gmpg/gmpg_0011.html</a>
                 </div>
               </div>
             </div>
@@ -372,7 +431,7 @@
                   <h4>文字表示を実現するため、さまざまな方法を調べた結果、DirectWriteを使用することにしました。</h4>
                 </div>
               </div>
-              <div class="container mt-2">
+              <div class="container mt-5">
                 <div class="row">
                   <div class="col-8 mx-auto">
                     <img src="assets/game1/loadFont.png" class="img-fluid">
@@ -403,7 +462,7 @@
                   <h4>シーン遷移時、まず可視範囲を全体からプレイヤー周辺まで縮小します。フィールドデータの更新が完了した後、可視範囲を再びプレイヤーから全体に拡大する仕様としました。</h4>
                 </div>
               </div>
-              <div class="container mt-2">
+              <div class="container mt-5">
                 <div class="row">
                   <div class="col-8 mx-auto">
                     <img src="./assets/game1/texUV.png" class="img-fluid">
